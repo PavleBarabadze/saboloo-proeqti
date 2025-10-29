@@ -14,5 +14,14 @@ document.querySelectorAll(".nav-link").forEach((link) => {
   });
 });
 
+// ===== CONTACT FORM FAKE SUBMIT =====
+const contactForm = document.querySelector(".contact-form");
+
+contactForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  alert("Thank you! Your message has been sent successfully.");
+  contactForm.reset();
+});
+
 // ===== AUTO YEAR IN FOOTER =====
 document.getElementById("year").textContent = new Date().getFullYear();
